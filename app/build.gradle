@@ -33,6 +33,13 @@ task runInEnglishUK {
     finalizedBy 'run'
 }
 
+task runInEnglishCanada {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=en_CA']
+    }
+    finalizedBy 'run'
+}
+
 task runInPortuguese {
     doFirst {
         applicationDefaultJvmArgs = ['-Duser.language=pt']
