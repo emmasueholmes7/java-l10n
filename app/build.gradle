@@ -151,3 +151,24 @@ task runInGreekGreece {
     }
     finalizedBy 'run'
 }
+
+task runInVietnameseVietnam {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=vi_VN']
+    }
+    finalizedBy 'run'
+}
+
+task runInSpanishGuatemala {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=es_GT']
+    }
+    finalizedBy 'run'
+}
+
+task runHindiIndia {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=hi_IN']
+    }
+    finalizedBy 'run'
+}
