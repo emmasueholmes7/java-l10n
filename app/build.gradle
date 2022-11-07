@@ -172,3 +172,10 @@ task runHindiIndia {
     }
     finalizedBy 'run'
 }
+
+task runHindiIndia {
+    doFirst {
+        applicationDefaultJvmArgs = ['-Duser.language=th_TH']
+    }
+    finalizedBy 'run'
+}
