@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home">
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home">
     <center>
         <VBox alignment="TOP_CENTER" spacing="16.0">
            <children>
@@ -17,6 +17,21 @@
               </HBox>
               <Slider fx:id="numberOfApples" blockIncrement="1.0" majorTickUnit="1.0" max="5.0" maxWidth="200.0" minorTickCount="0" snapToTicks="true" />
               <Label fx:id="numberOfApplesLabel" />
+               <HBox alignment="CENTER_LEFT" spacing="18.0">
+                   <children>
+                       <Label text="%greatThings" />
+                   </children>
+               </HBox>
+               <HBox alignment="CENTER_LEFT" spacing="18.0">
+                   <children>
+                       <Label text="%notSoGreatThings" />
+                   </children>
+               </HBox>
+               <HBox alignment="CENTER_LEFT" spacing="18.0">
+                   <children>
+                       <Label text="%soSoThings" />
+                   </children>
+               </HBox>
            </children>
            <padding>
               <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
